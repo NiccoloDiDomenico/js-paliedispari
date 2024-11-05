@@ -21,3 +21,38 @@ Domande da  farsi quando si crea una funzione:
 2. Ho bisogno di parametri?
 3. Devo restituire un valore?
 4. Se sì, di che tipo?
+
+// PALIDROMA
+
+// DATI
+// - userWord
+
+// ESECUZIONE LOGICA
+// - Chiedere una parola all'utente attraverso un "prompt";
+// - Creare una "function" che definisce se una parola è palindroma;
+
+// OUTPUT
+// - Stamapare il risultato attravero un'istruzione condizionale;
+
+
+// PARI E DISPARI
+
+// DATI
+// - userChoise
+// - userNum
+// - cpuNum
+
+// ESECUZIONE LOGICA
+// - Chiediamo all'utento di scegliere pari o dispari attraverso un prompt
+// - Chiediamo all'utente di sceglliere un numero da 1 a 5
+// - Generiamo un numero random da 1 a 5 per il computer tramite funzione 
+// - Sommiamo i due numeri 
+// - Stabiliamo se la somma è pari o dispari
+
+// OUTPUT
+// - Stampo il risultato attravero un'istruzione condizionale:
+//     -se num è pari {
+//         vince pari
+//     } else {
+//         vince dispari
+//     }
