@@ -8,20 +8,17 @@
 function palidroma(wordToCheck) {
     let isPalidroma;
     let reverseWord = "";
-
     for (let i = wordToCheck.length - 1; i >= 0; i--) {
         const currentLetter = wordToCheck[i];
         console.log(currentLetter);
         reverseWord += currentLetter
     }
     console.log(reverseWord);
-
     if (wordToCheck === reverseWord) {
         isPalidroma = true
     } else {
         isPalidroma = false
     }
-
     return isPalidroma;
 }
 
@@ -29,26 +26,26 @@ function palidroma(wordToCheck) {
 // PARI E DISPARI
 
 /**
- * Definisco un numero random da 1 a 5 per la cpu
- * @param {number} numeroRandom
+ * Genera un numero random per la cpu
+ * @param {number} min
+ * @param {number} max
  * @returns {number}
  */
-function numRandom(numeroRandom) {
-    const cpuNum = Math.floor((Math.random() * 5) + 1);
-    return cpuNum
+function getCpuNumber(min, max) {
+    return Math.floor((Math.random() * (max - min + 1)) + min);
 }
 
 /**
  * Definisco se la somma è pari o dispari
- * @param {number} number
+ * @param {number} numToCheck
  * @returns {string}
  */
-function sumType(number) {
-    let isEvenOrOdds;
+function sumType(numToCheck) {
+    let result;
     if (sum % 2 === 0) {
-        isEvenOrOdds = true
+        result = "La somma è pari"
     } else {
-        isEvenOrOdds = false
+        result = "La somma è dispari"
     }
-    return isEvenOrOdds
+    return result;
 }
